@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <div class="row">
+        <h1 class="display-3 text-primary">Custom Pipes</h1>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2 class="display-5">Price : {{price | currency : 'INR' }}</h2>
+            <h2 class="display-5">DOB : {{dob | date : 'dd/MM/YYYY HH:mm'}}</h2>
+            <h2 class="display-5">Age : {{dob | ageFromDob }}</h2>
+            <h2 class="display-5">Info : {{ desc | textOverflowEllipsis : 50 }}</h2>
+        </div>
+    </div>
+</div>

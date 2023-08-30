@@ -1,0 +1,19 @@
+<div class="container mt-5" >
+    <div class="row">
+        <h1 class="display-3 text-primary">Custom Directives</h1>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h1 class="display-5">CNIC Formatter</h1>
+            <input type="text" [maxLength]="15" class="form-control"
+                appCnicPattern>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h1 class="display-5">Password Validator</h1>
+            <input type="password" class="form-control" appPasswordStrength>
+            <span class="password-status"></span>
+        </div>
+    </div>
+</div>

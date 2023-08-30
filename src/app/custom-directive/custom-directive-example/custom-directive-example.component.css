@@ -1,0 +1,11 @@
+.weak {
+    border: 2px solid red;
+}
+
+.medium {
+    border: 2px solid orange;
+}
+
+.strong {
+    border: 2px solid green;
+}
