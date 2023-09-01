@@ -1,0 +1,12 @@
+
+<li class="list-group-item"
+    [ngClass]="{'bg-danger': item.type == 'Urgent' ,'bg-success': item.type == 'Normal' }">
+    <div class="d-flex justify-content-between">
+        <span>
+            {{item.title}}
+        </span>
+        <span>
+            {{item.deadline | date : 'dd / MM / YYYY'}}
+        </span>
+    </div>
+</li>

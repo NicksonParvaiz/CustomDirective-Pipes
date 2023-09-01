@@ -1,0 +1,28 @@
+<div class="bg-info p-5">
+    <form [formGroup]="todoForm" (ngSubmit)="submit()">
+        <div class="row">
+            <div class="col-md-2">
+                <input type="text" formControlName="title" placeholder="Title"
+                    class="form-control">
+                <span class="text-danger"
+                    *ngIf=" todoForm.get('title').invalid  && isSubmit">Required</span>
+            </div>
+            <div class="col-md-2">
+                <input type="text" formControlName="type" placeholder="Type"
+                    class="form-control">
+                <span class="text-danger"
+                    *ngIf=" todoForm.get('type').invalid  
+                    && isSubmit">Required</span>
+            </div>
+            <div class="col-md-2">
+                <input type="date" formControlName="deadline"
+                    placeholder="Dead line" class="form-control">
+                <span class="text-danger"
+                    *ngIf="todoForm.get('deadline').invalid && isSubmit">Required</span>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-primary" type="submit">Add</button>
+            </div>
+        </div>
+    </form>
+</div>

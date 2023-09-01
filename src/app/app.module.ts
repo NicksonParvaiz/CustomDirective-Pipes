@@ -7,8 +7,11 @@ import { CustomDirectiveModule } from './custom-directive/custom-directive.modul
 import { CustomPipeModule } from './custom-pipe/custom-pipe.module';
 import { FormExampleComponent } from './form-example/form-example.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TodolistComponent } from './todolist/todolist.component';
+import { TodoformComponent } from './todoform/todoform.component';
+import { TodolistItemComponent } from './todolist/todolist-item/todolist-item.component';
 @NgModule({
-  declarations: [AppComponent, FormExampleComponent],
+  declarations: [AppComponent, FormExampleComponent, TodolistComponent, TodoformComponent, TodolistItemComponent],
   imports: [
     BrowserModule,
     CustomDirectiveModule,
